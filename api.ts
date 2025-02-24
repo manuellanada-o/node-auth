@@ -7,6 +7,10 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hello Universe!');
 });
 
+app.get('/test', (req: Request, res: Response) => {
+    res.send('test this shit');
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
