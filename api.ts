@@ -16,6 +16,8 @@
 // });
 
 exports.handler = async (event: any, context: any) => {
+    console.log(`Object.values(event)=${Object.values(event)}`)
+    console.log(`Object.values(context)=${Object.values(context)}`)
     if (event.httpMethod === 'GET') {
         try {
             return {
